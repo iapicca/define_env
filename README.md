@@ -1,16 +1,23 @@
 # define_env
 
-A new Flutter project.
+example for flutter side flavors
 
-## Getting Started
+## use  target
 
-This project is a starting point for a Flutter application.
+-  development
 
-A few resources to get you started if this is your first Flutter project:
+`flutter run -d chrome -t lib/develop.dart`
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+-  production
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`flutter run -d chrome -t lib/production.dart`
+
+
+## use  dart define
+
+-  development
+
+`flutter run -d chrome`
+-  production
+
+`flutter run -d chrome --dart-define=FLAVOR=production`
